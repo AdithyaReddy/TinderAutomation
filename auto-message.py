@@ -11,7 +11,7 @@ headers = { 'Accept':'application/json',
             'platform':'web',
             'Referer':'https://tinder.com/',
             'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
-            'X-Auth-Token':'44b3be54-d773-4e21-b4bc-1535fe0c769c',
+            'X-Auth-Token':'44b3be54-d773-4e21-b4bc-1535fe0c769', #***Your tinder auth-token***
             'x-supported-image-formats':'webp,jpeg'
         }
 
@@ -43,8 +43,8 @@ for match in reversedFinalMatchList:
     body = {}
     body['matchId'] = matchId
     body['message'] = 'Hey ' + personName + ' :) \n How are you doing?'
-    body['tempMessageId'] = '0.07054938870864036'
-    body['userId'] = '547f53c15e87266642a92524'
+    body['tempMessageId'] = '0.07054938870864036' #Any random number would work
+    body['userId'] = '547f53c15e87266642a9252' # ***Your tinder user-id***
 
     url = messageMatchEndpoint + matchId + '?locale=en-GB'
     messageApiResponse = requests.post(url = url, json = body, headers = headers)
