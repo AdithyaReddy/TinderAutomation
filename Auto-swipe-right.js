@@ -1,1 +1,1 @@
-setInterval( function () { var likeBtns = document.getElementsByClassName("recsGamepad__button--like"); likeBtns[0].click() }, 1000)
+setInterval( function () { var likeBtn = document.querySelector('[aria-label="Like"]'); likeBtn.click() }, 1000)
