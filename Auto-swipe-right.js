@@ -1,1 +1,1 @@
-setInterval( function () { var likeBtn = document.querySelector('[aria-label="Like"]'); likeBtn.click() }, 1000)
+setInterval( function () { var likeBtn = document.querySelectorAll('[class="button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style Bxsh($bxsh-btn) Expand D(b) Bgc(#fff) Trstf(e) Trsdu($normal) Wc($transform) Pe(a) Scale(1.1):h Scale(.9):a"]')[1]; likeBtn.click() }, 2000)
